@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	  <meta charset="utf-8">
+	<title>Component Injection</title>
+</head>
+<body>
+	<h1>Component Injection</h1>
+	<hr>
+	<div id="root">
+		
+	</div>
+	<script type="text/javascript" src="js/react.js"></script>
+	<script type="text/javascript" src="js/react-dom.js"></script>
+	<script src="js/babel.min.js"></script>
+
+	<script type="text/babel">
+	class Hello extends React.Component{
+		render () {
+			return (<h1>Hello</h1>);
+		}
+	}
+	class World extends React.Component{
+		render () {
+			return (<h1>World</h1>);
+		}
+	}
+	class HelloWorld extends React.Component{
+		render () {
+			return (
+			<div>
+				<Hello/> <World/>
+			</div>);
+		}
+	}
+ 		ReactDOM.render(<HelloWorld/>,document.getElementById('root'));
+
+
+	</script>
+</body>
+</html>

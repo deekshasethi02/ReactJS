@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	  <meta charset="utf-8">
+	<title>React Component Props-02</title>
+</head>
+<body>
+	<h1>Functional Component Props</h1>
+	<hr>
+	<div id="root">
+		
+	</div>
+	<script type="text/javascript" src="js/react.js"></script>
+	<script type="text/javascript" src="js/react-dom.js"></script>
+	<script src="js/babel.min.js"></script>
+
+	<script type="text/babel">
+	const GreetingComponent =(props)=>{
+			return (<span>hi : {props.msg}</span>);
+	}
+ 		ReactDOM.render(<GreetingComponent msg="Good Evening"/>,document.getElementById('root'));
+
+
+	</script>
+</body>
+</html>

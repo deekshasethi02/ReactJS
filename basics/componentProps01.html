@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	  <meta charset="utf-8">
+	<title>React Component Props-01</title>
+</head>
+<body>
+	<h1>Class Component Props</h1>
+	<hr>
+	<div id="root">
+		
+	</div>
+	<script type="text/javascript" src="js/react.js"></script>
+	<script type="text/javascript" src="js/react-dom.js"></script>
+	<script src="js/babel.min.js"></script>
+
+	<script type="text/babel">
+	class GreetingComponent extends React.Component{
+		render () {
+			return (<span>hi : {this.props.msg}</span>);
+		}
+	}
+ 		ReactDOM.render(<GreetingComponent msg="Good Morning"/>,document.getElementById('root'));
+
+
+	</script>
+</body>
+</html>

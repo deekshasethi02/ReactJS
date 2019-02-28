@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>React Simulator 02</title>
+</head>
+<body>
+	<h1>Without React-02</h1>
+	<hr>
+	<div id="root">
+		
+	</div>
+	<script type="text/javascript">
+	var dom={
+			whatToRender:"Hello world without react js",
+			whereToRender:"root",
+			render: function(whatToRender,whereToRender){
+				document.getElementById(whereToRender).innerHTML = whatToRender;
+			}
+	};
+
+		dom.render(dom.whatToRender,dom.whereToRender);
+
+	</script>
+</body>
+</html>
